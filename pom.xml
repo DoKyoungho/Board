@@ -46,17 +46,19 @@
 
 		<!-- JDBC에서 실제 MySQL과의 연결은 드라이버에게 위임합니다. 그 때 사용할 드라이버 -->
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>8.0.25</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 
 		<!-- getter, setter, 생성자 등을 자동으로 생성해주는 -->
 		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.20</version><!--$NO-MVN-MAN-VER$-->
+		    <scope>provided</scope>
 		</dependency>
+
 
 		<!-- 스프링부트 기본 -->
 		<dependency>
